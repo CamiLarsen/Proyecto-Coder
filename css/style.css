@@ -1,0 +1,278 @@
+/**-----RESET-lo que aplico aca se aplicará a todas las etiquetas HTML-----*/ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**------ INDEX-------/
+/**-----HEADRER-----*/
+header { 
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    margin: 0;
+}
+
+header {
+    background-color: black;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin: 5px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #179BD3;
+}
+
+.menu{
+    position: relative; 
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: baseline;
+    margin-inline-end: auto;
+    justify-content: flex-end;
+    margin: 5px;
+}
+
+.encabezado {
+    display: flex;
+    align-items: baseline;
+}
+
+nav button {
+    font-size: 15px;
+    margin:5px;
+}
+
+
+/**---pseudoclases--*/
+
+header nav ul li a:hover {
+    color: white;
+    background-color: blue;
+}
+
+
+
+/**-----MAIN-----*/
+
+/**-----INDEX-----*/
+.hero img {
+    width: 100%;
+}
+
+.nosotros h2 {
+    font-size: 30px;
+}
+
+.nosotros p {
+    font-size: 20px;
+}
+.atributos img {
+    width: 80px;
+    height: 80px;
+}
+
+.atributos div {
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+
+
+/**-----PRODUCTOS Y SERV-----*/
+.portada {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.bienvenida {
+    width: 100%;
+    height: 100px; 
+    margin-bottom: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.bienvenida h2 {
+    font-size: 45px;
+    position: relative; top: 40px;
+}
+
+.bienvenida p {
+    font-size: 20px;
+    position: relative; top: 60px;
+}
+
+.bienvenida a {
+    position: relative; top: 100px;
+}
+
+
+
+.promo {
+    height: 450px;
+}
+/**--imagenes prdoductos--*/
+
+.productos {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.productos div {
+    width: 350px;
+    display: inline-block;
+    text-align: center;
+    justify-content: flex center;
+}
+
+.productos img {
+    width: 350px;
+    height: 350px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 10%;
+}
+
+.productos h2 {
+    size:30;
+    display: flex;
+}
+.productos a {
+    padding: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.frio-calor h2 {
+    padding: 20px;
+}
+.frio-calor img { 
+    width: 299px;
+    height: 450px;
+    border-radius: 10%;
+}
+
+
+.frio-calor a {
+    padding: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.frio-calor div ul p {
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.texto {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.envios { 
+    margin-top: 50px;
+}
+
+.envios .boton {
+    width: 200px;
+    height: 40px;
+    display:flex;
+    justify-content: center;
+}
+
+/**-----CONTACTO-----*/
+.formulario div { 
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+.formulario .boton {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.mensajeform input{
+    height: 100px;
+}
+
+/**-----ZONAS DE REPARTO-----*/
+.reparto h2 { 
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.reparto img {
+    display: block;
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+}
+
+.card-title {
+    font-size: large;
+}
+
+
+.boton {
+    text-decoration: none;
+    background-color: #179BD3;
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.boton:hover { 
+    background-color: #b1e8ff;
+}
+
+
+
+
+/**------FOOTER-----*/
+footer{
+    background-color: black;
+}
+
+footer h2 {
+    color: #179BD3;
+}
+footer img{
+    width: 50px;
+    height: 50px;
+}
+
+
+/**------GRID-----*/
+.grid-container {
+    border: solid 4px crimson;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: grid;
+    grid-template-rows: 500px 600px 600px 800px 650px;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+
+
+/**------MEDIA QUERIES-----*/
+
+
+
+
+
