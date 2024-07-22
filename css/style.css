@@ -49,6 +49,14 @@ nav button {
     margin:5px;
 }
 
+main {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.imghero { 
+margin: 0%;
+}
 
 /**---pseudoclases--*/
 
@@ -81,6 +89,7 @@ header nav ul li a:hover {
 .atributos div {
     display: inline-block;
     justify-content: space-evenly;
+    justify-items: center;
 }
 
 .atributos p {
@@ -292,15 +301,26 @@ p {
 /**------FOOTER-----*/
 footer{
     background-color: black;
+    height: 120px;
 }
 
 footer h2 {
     color: #179BD3;
+    display: flex;
+    justify-content: center;
 }
 footer img{
     width: 50px;
     height: 50px;
+    margin-top: 30px;
 }
+
+footer ul {
+    margin-bottom: 0%;
+    display: flex;
+    justify-content: center;
+}
+
 
 
 /**------GRID-----*/
@@ -357,17 +377,4 @@ footer img{
     grid-template-rows: auto;
     grid-area: 
     "A1 A2 A3";
-}
-
-.A1 {
-    grid-area: A1;
-    justify-self: center;
-}
-
-.A2 {
-    grid-area: A2;
-}
-
-.A3 {
-    grid-area: A3;
 }
