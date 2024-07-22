@@ -190,11 +190,34 @@ header nav ul li a:hover {
 }
 
 /**-----CONTACTO-----*/
+
+
 .formulario div { 
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 10px;
 }
+
+input {
+    display: block;
+    width: 730px;
+    margin-left: 500px;
+}
+
+.formulario h2{
+    display: flex;
+    justify-content:center;
+}
+.formulario h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario div p {
+    display: flex;
+    justify-content: center;
+}
+
 
 
 .formulario .boton {
@@ -202,8 +225,19 @@ header nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+.iconoW {
+    width: 60px;
+    height: 60px;
+}
+
 .mensajeform input{
     height: 100px;
+}
+
+
+.mensajeform {
+    display: block;
+    justify-content: center;
 }
 
 /**-----ZONAS DE REPARTO-----*/
@@ -227,11 +261,6 @@ header nav ul li a:hover {
 }
 
 
-.card-title {
-    font-size: large;
-}
-
-
 .boton {
     text-decoration: none;
     background-color: #179BD3;
@@ -246,8 +275,17 @@ header nav ul li a:hover {
     background-color: #b1e8ff;
 }
 
+.titulos {
+    font-size: 30px;
+}
 
+.subtitulos {
+    font-size:25px
+}
 
+p {
+    font-size: 20px;
+}
 
 /**------FOOTER-----*/
 footer{
@@ -264,58 +302,50 @@ footer img{
 
 
 /**------GRID-----*/
-.grid-container {
-    border: solid 4px crimson;
-    margin-top: 20px;
-    margin-left: 20px;
+.bienvenida{
     display: grid;
-    grid-template-rows: 500px 600px 600px 800px 650px;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-areas: 
-    "portada portada portada"
-    "img1 info1 info1"
-    "productos productos productos"
-    "img2 info2 info2"
-    "envios envios envios";
+    grid-template-rows:450px;
+    grid-template-columns: 50% 50%;
     column-gap: 10px;
-    row-gap: 10px;
+    grid-template-areas:
+    "img info";
+    
 }
 
-.portada {
-    grid-area: portada;
-}
-
-.p-img {
-    grid-area: img1;
+.promo {
+    grid-area: img;
+    display: flex;
+    justify-self: end;
 }
 
 .p-tex {
-    grid-area: info1;
+    grid-area: info;
+    align-self: center;
+    display: flex;
+    justify-self: start;
 }
 
-.productos {
-    grid-area: productos;
-}
+
 
 .fc-info {
-    grid-area: img2;
+    display: grid;
+    grid-template-rows:450px;
+    grid-template-columns: 300px 533px 533px;
+    grid-template-areas:
+    "img1 texto texto"
 }
 
+.img1 {
+    grid-area: img1;
+}
 
 .texto {
-    grid-area: info2;
-} 
-
-.envios {
-    grid-area: envios;
+    grid-area: texto;
+    align-self: center;
 }
 
-.pie {
-    grid-area: footer;
+
+.inputype {
+    grid-area: formulario;
 }
-/**------MEDIA QUERIES-----*/
-
-
-
-
 
