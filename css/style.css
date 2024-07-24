@@ -50,8 +50,8 @@ nav button {
 }
 
 main {
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
 }
 
 .imghero { 
@@ -81,6 +81,17 @@ header nav ul li a:hover {
 .nosotros p {
     font-size: 20px;
 }
+
+#nosotros img {
+    width: 500px;
+    border-radius: 10%;
+}
+
+#nosotros ul {
+    display: inline-block;
+    justify-content: center;
+}
+
 .atributos img {
     width: 80px;
     height: 80px;
@@ -96,11 +107,18 @@ header nav ul li a:hover {
     font-size: 16px;
 }
 
+.proceso ul {
+    display: flex;
+    justify-content: center;
+}
+
+.proceso img {
+    border-radius: 10%;
+}
+
 /**-----PRODUCTOS Y SERV-----*/
 .portada {
     width: 100%;
-    display: flex;
-    justify-content: center;
 }
 .bienvenida {
     width: 100%;
@@ -146,8 +164,8 @@ header nav ul li a:hover {
 }
 
 .productos img {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 300px;
     margin-top: 25px;
     margin-bottom: 25px;
     border-radius: 10%;
@@ -209,10 +227,11 @@ header nav ul li a:hover {
     margin-left: 10px;
 }
 
-input {
+
+
+div input {
     display: block;
     width: 730px;
-    margin-left: 500px;
 }
 
 .formulario h2{
@@ -227,6 +246,7 @@ input {
 .formulario div p {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -237,8 +257,8 @@ input {
 }
 
 .iconoW {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
 }
 
 .mensajeform input{
@@ -350,14 +370,14 @@ footer ul {
     column-gap: 10px;
     grid-template-areas:
     "img info";
-    
 }
 
 .promo {
     grid-area: img;
     display: flex;
-    justify-self: end;
+    justify-self: center;
 }
+
 
 .p-tex {
     grid-area: info;

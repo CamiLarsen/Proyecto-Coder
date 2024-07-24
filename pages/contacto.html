@@ -20,7 +20,7 @@
         <nav class="menu">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="../index.html">Nosotros</a></li>
                 <li><a href="./productos-y-servicios.html">Productos y servicios</a></li>
                 <li><a href="./zonas de reparto.html">Zonas de reparto</a></li>
                 <li><a href="./contacto.html">Contacto</a></li>
@@ -29,39 +29,41 @@
         </nav>
     </header>
     <main>
-        <Section class="formulario">
-            <h2 class="titulo">CONTACTO</h2>
-            <h3 class="subtitulos">Dejanos tu consulta y nos comunicamos a la brevedad.</h3>
-            <div class="inputype">
-                <div class="nombreform">
-                    <label for="inputEmail4" class="nombre">Nombre</label>
-                    <input type="nombre" class="nombre" id="nombre">
+        <div class="container">
+            <Section class="formulario">
+                <h2 class="titulo">CONTACTO</h2>
+                <h3 class="subtitulos">Dejanos tu consulta y nos comunicamos a la brevedad.</h3>
+                <div class="inputype">
+                    <div class="nombreform">
+                        <label for="inputEmail4" class="nombre">Nombre</label>
+                        <input type="nombre" class="nombre" id="nombre">
+                    </div>
+                    <div class="numeroform">
+                        <label for="numero" class="numero">Número celular</label>
+                        <input type="number" class="numero" id="numero">
+                    </div>
+                    <div class="emailform">
+                        <label for="E-mail" class="E-mail">E-mail</label>
+                        <input type="email" class="E-mail" id="E-mail" placeholder="ejemplo@gmail.com">
+                    </div>
+                    <div class="direccionform">
+                        <label for="direccion" class="direccion">Dirección</label>
+                        <input type="text" class="direccion" id="direccion" placeholder="Direccion o zona">
+                    </div>
+                    <div class="mensajeform">
+                        <label for="mensaje" class="mensaje" id="mensaje">Mensaje</label>
+                        <input type="text" class="mensaje" id="mensaje" placeholder="Deje su mensaje">
+                    </div>
                 </div>
-                <div class="numeroform">
-                    <label for="numero" class="numero">Número celular</label>
-                    <input type="number" class="numero" id="numero">
+                <div>
+                    <a href="" class="boton">Enviar</a>
                 </div>
-                <div class="emailform">
-                    <label for="E-mail" class="E-mail">E-mail</label>
-                    <input type="email" class="E-mail" id="E-mail" placeholder="ejemplo@gmail.com">
+                <div>
+                    <p class="contac">También podés contactarte por WhatsApp<a href=""><img
+                                src="../img/whatsapp flotante.png" class="iconoW" alt="icono"></a></p>
                 </div>
-                <div class="direccionform">
-                    <label for="direccion" class="direccion">Dirección</label>
-                    <input type="text" class="direccion" id="direccion" placeholder="Direccion o zona">
-                </div>
-                <div class="mensajeform">
-                    <label for="mensaje" class="mensaje" id="mensaje">Mensaje</label>
-                    <input type="text" class="mensaje" id="mensaje" placeholder="Deje su mensaje">
-                </div>
-            </div>
-            <div>
-                <a href="" class="boton">Enviar</a>
-            </div>
-            <div>
-                <p class="contac">También podés contactarte por WhatsApp<a href=""><img
-                            src="../img/whatsapp flotante.png" class="iconoW" alt="icono"></a></p>
-            </div>
-        </Section>
+            </Section>
+        </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
