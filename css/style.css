@@ -11,12 +11,14 @@ header {
     width: 100%;
     height: 120px;
     padding: 10px;
-    margin: 0;
+    position: absolute;
+    position: fixed;
 }
 
 header {
     background-color: black;
 }
+
 
 header nav ul li{
     display: inline-block;
@@ -26,6 +28,10 @@ header nav ul li{
 header nav ul li a{
     text-decoration: none;
     color: #179BD3;
+}
+
+.navbar.bg-body-tertiary {
+    display: none;
 }
 
 .menu{
@@ -55,21 +61,46 @@ main {
 }
 
 .imghero { 
-margin: 0%;
+margin-top: 120px;
 }
 
-/**---pseudoclases--*/
-
-header nav ul li a:hover {
-    color: white;
-    background-color: blue;
+.navbar.bg-body-tertiary {
+    background-color: black !important; 
 }
 
+.navbar-toggler {
+    background-color: #179BD3 !important;
+
+}
+
+div .offcanvas-body {
+    background-color: black !important;
+}
+
+
+.offcanvas-header {
+    background-color: black !important;
+}
+
+.btn-close {
+    background-color:#179BD3 !important;
+    opacity: 100% !important;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #179BD3 !important;
+}
 
 
 /**-----MAIN-----*/
 
 /**-----INDEX-----*/
+
+.fixed {
+    display: none;
+}
+
 .hero img {
     width: 100%;
 }
@@ -116,12 +147,6 @@ header nav ul li a:hover {
     border-radius: 10%;
 }
 
-.portada img {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
 /**-----PRODUCTOS Y SERV-----*/
 
 .bienvenida {
@@ -132,7 +157,6 @@ header nav ul li a:hover {
     justify-content: center;
 }
 
-
 .bienvenida h2 {
     font-size: 45px;
     position: relative; top: 40px;
@@ -140,18 +164,12 @@ header nav ul li a:hover {
 
 .bienvenida p {
     font-size: 20px;
-    position: relative; top: 60px;
 }
-
-.bienvenida a {
-    position: relative; top: 100px;
-}
-
-
 
 .promo {
     height: 450px;
 }
+
 /**--imagenes prdoductos--*/
 
 .productos {
@@ -180,7 +198,7 @@ header nav ul li a:hover {
     display: flex;
 }
 .productos a {
-    padding: 15px;
+    padding: 10px;
     margin-bottom: 30px;
     margin-top: 30px;
 }
@@ -194,16 +212,14 @@ header nav ul li a:hover {
     border-radius: 10%;
 }
 
-
 .frio-calor a {
-    padding: 15px;
+    padding: 10px;
     margin-bottom: 10px;
     margin-top: 10px;
 }
 
 .frio-calor div ul p {
     margin-bottom: 20px;
-    display: inline-block;
 }
 
 .texto {
@@ -211,19 +227,33 @@ header nav ul li a:hover {
     vertical-align: top;
 }
 
+.texto a {
+    height: 40px;
+}
 .envios { 
     margin-top: 50px;
 }
 
-.envios .boton {
-    width: 200px;
-    height: 40px;
-    display:flex;
+div .text-bg-dark {
+    color: black !important;
+    font-weight: bold !important;
+    background-color: white !important;
+}
+
+.boton-zonas {
+    display: flex;
     justify-content: center;
 }
 
-/**-----CONTACTO-----*/
+.boton-zonas a {
+    height: 40px;
+}
 
+/**-----CONTACTO-----*/
+.container2 {
+    display: flex;
+    justify-content: center;
+}
 
 .formulario div { 
     margin-bottom: 10px;
@@ -231,10 +261,9 @@ header nav ul li a:hover {
     margin-left: 10px;
 }
 
-
-
 div input {
     display: block;
+    justify-content: center;
     width: 730px;
 }
 
@@ -253,11 +282,10 @@ div input {
     align-items: center;
 }
 
-
-
-.formulario .boton {
+.formulario a {
     margin-top: 20px;
     margin-bottom: 20px;
+    justify-content: center;
 }
 
 .iconoW {
@@ -268,7 +296,6 @@ div input {
 .mensajeform input{
     height: 100px;
 }
-
 
 .mensajeform {
     display: block;
@@ -281,8 +308,6 @@ div input {
     display: flex;
     justify-content: flex center;
 }
-
-
 
 .reparto h2 { 
     margin-bottom: 10px;
@@ -299,8 +324,9 @@ div input {
     justify-content: center;
 }
 
-
-
+.reparto img {
+    border-radius: 10%;
+}
 
 .reparto img {
     width: 500px;
@@ -317,16 +343,14 @@ div input {
 
 .boton {
     text-decoration: none;
+    font-weight: bold;
     background-color: #179BD3;
     color: black;
+    height: 50px;
     font-size: 15px;
-    padding: 5px;
+    padding: 10px;
     margin: 10px;
     border-radius: 15px;
-}
-
-.boton:hover { 
-    background-color: #b1e8ff;
 }
 
 .titulos {
@@ -360,6 +384,7 @@ footer img{
 
 footer ul {
     margin-bottom: 0%;
+    padding: 0%;
     display: flex;
     justify-content: center;
 }
@@ -372,6 +397,26 @@ footer ul {
     margin-top: 22px;
     margin-left: 7px;
 }
+
+/**---pseudoclases--*/
+
+header nav ul li a:hover {
+    color: white;
+    background-color: blue;
+}
+
+.boton:hover { 
+    background-color: #b1e8ff;
+}
+
+.btn-close:hover {
+    background-color: #b1e8ff !important;
+}
+
+.navbar-toggler:hover {
+    background-color: #b1e8ff !important;
+}
+
 
 /**------GRID-----*/
 .bienvenida{
@@ -389,14 +434,12 @@ footer ul {
     justify-self: center;
 }
 
-
 .p-tex {
     grid-area: info;
     align-self: center;
     display: flex;
     justify-self: start;
 }
-
 
 
 .fc-info {
@@ -444,3 +487,211 @@ footer ul {
     justify-self: center;
 }
 
+
+/**------MEDIA QUERIES-----*/
+
+/**------navbar-----*/
+@media screen and (max-width: 1016px) {
+    .abrir-menu {
+        display: block;
+    } 
+
+    .menu {
+        display:none;
+    }
+}
+
+/**------boton flotante wpp-----*/
+@media screen and (max-width: 1016px){
+    .fixed img{
+        display: block;
+        width: 45px;
+    }
+
+    .fixed {
+        display: block;
+        position: fixed;
+        bottom: 110px;
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 1016px){
+    .navbar.bg-body-tertiary {
+        display: block;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .productos img {
+        width: 200px;
+        height: 200px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border-radius: 10%;
+    }
+    .titulos {
+        font-size: 20px;
+    }
+    .subtitulos{
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .frio-calor div ul p {
+        margin-bottom: 16px;
+    }
+    .frio-calor img { 
+        width: 250px;
+        height: 350px;
+        border-radius: 10%;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    .fc-info {
+        display: grid;
+        grid-template-columns: 300px 366px;
+        grid-template-rows:350px;
+        grid-template-areas:
+        "img1 texto"
+    }
+    .img1 {
+        grid-area: img1;
+    }
+    .texto {
+        grid-area: texto;
+        align-self: center;
+    }
+    
+}
+
+@media screen and (max-width:1000px) {
+    .fc-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:350px;
+        grid-template-areas:
+        "img1" 
+        "texto"
+    }
+    .img1 {
+        grid-area: img1;
+    }
+    .texto {
+        grid-area: texto;
+        align-self: center;
+    }
+    
+}
+
+@media screen and (max-width:350px ){
+    .subtitulos {
+        font-size: 16px;
+    }
+    .titulos {
+        font-size: 20px;
+    }
+}
+
+/**------formulario-----*/
+@media screen and (max-width: 350px) { 
+    div input {
+        display: block;
+        width: 200px;
+    }
+}
+
+
+@media screen and (max-width:780px){
+    .atributos div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .productos {
+        display: flex;
+        flex-direction: column;
+    }
+    .productos div {
+        width: 350px;
+    }
+    .productos img {
+        width: 200px;
+        height: 200px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border-radius: 10%;
+    }
+    .productos img {
+        justify-self: center;
+    }
+
+    .productos h3 {
+        font-size: 16px;
+        justify-self: center;
+    }
+
+    .productos div ul a {
+        justify-self: center;
+    }
+
+    .frio-calor {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .frio-calor img {
+    justify-self: center;
+    }
+}
+
+
+
+
+@media screen and (max-width:350px){
+    .atributos div {
+        display: flex;
+        flex-direction: column;
+    }
+    .productos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .productos div {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+    }
+    .productos img {
+        width: 200px;
+        height: 200px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border-radius: 10%;
+    }
+    footer{
+        background-color: black;
+        height: 85px;
+    }
+    footer img{
+        width: 25px;
+        height: 25px;
+        margin-top: 5px;
+    }
+    .logog {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 3.5px;
+    }
+}

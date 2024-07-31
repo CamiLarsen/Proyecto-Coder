@@ -17,6 +17,42 @@
                 <img src="../img/logo_.png" alt="">
             </label>
         </div>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/logo_.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#nosotros">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/productos-y-servicios.html">Productos y servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./zonas de reparto.html">Zonas de reparto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                            <li>
+                                <button class="boton">Quiero ser cliente</button>
+                            </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
         <nav class="menu">
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
@@ -30,8 +66,9 @@
     </header>
     <main class="contenido">
         <section>
-            <div class="portada">
-                <img src="../img/portada productos.png" alt="Bidones 20lts, Bidones 12lts, dispenser natural, dispenser frio calor">
+            <div class="hero">
+                <img src="../img/portada productos.png" class="imghero"
+                    alt="Bidones 20lts, Bidones 12lts, dispenser natural, dispenser frio calor">
             </div>
         </section>
         <div class="container">
@@ -87,7 +124,7 @@
                     </ul>
                 </div>
         </div>
-            </section>
+        </section>
         <div class="container-fluid">
             <section class="envios">
                 <div class="card text-bg-dark">
@@ -98,8 +135,9 @@
                         <p class="card-text">Consultá qué días vamos a la zona!</p>
                     </div>
                 </div>
-        </div>
-                <a href="../pages/zonas de reparto.html" class="boton">Ver zonas de reparto</a>
+                <div class="boton-zonas">
+                    <a href="../pages/zonas de reparto.html" class="boton">Ver zonas de reparto<a>
+                </div>
             </section>
         </div>
     </main>
@@ -116,7 +154,7 @@
                 alt="icono instagram"></a>
         <a href="https://www.facebook.com/aguagoldwai" target="_blank"><img src="../img/icono facebook.png"
                 alt="icono facebook"></a>
-        <a href="" target="_blank"></a><img src="../img/icono gmail.png" alt="icono gmail" class="logog">  
+        <a href="" target="_blank"></a><img src="../img/icono gmail.png" alt="icono gmail" class="logog">
     </ul>
 </footer>
 </div>
