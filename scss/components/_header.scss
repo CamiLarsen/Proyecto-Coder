@@ -1,0 +1,62 @@
+header{
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    position: absolute;
+    position: fixed;
+    background-color: black;
+    display: flex;
+    align-items: baseline;
+    .navbar.bg-body-tertiary {
+        display: none;
+        .bg-body {
+            .navbar-toggler {
+                background-color: #179BD3 !important; 
+            }
+            .btn-close {
+                background-color: #179BD3 !important;
+                opacity: 100% !important;
+            }
+            .offcanvas-header {
+                background-color: black !important;
+            }
+            .offcanvas-body {
+                background-color: black !important;
+            }
+            .nav-item {
+                a {
+                    text-decoration: none;
+                    color: #179BD3 !important;
+                }
+            }
+        }        
+        }
+    .menu {
+        position: relative; 
+        display: flex;
+        width: 100%;
+        height: 50px;
+        align-items: baseline;
+        margin-inline-end: auto;
+        justify-content: flex-end;
+        margin: 5px;
+        ul li {
+            display: inline-block;
+            margin: 5px;
+            }
+            a {
+                text-decoration: none;
+                color: #179BD3;
+                display: flex;
+                align-items: baseline;
+                &:hover{
+                    color: white;
+                    background-color: blue;
+                }
+            }
+    }
+    nav button {
+        font-size: 15px;
+        margin:5px;
+    }
+}

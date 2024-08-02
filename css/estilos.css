@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.boton {
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #179BD3;
+  color: black;
+  height: 50px;
+  font-size: 15px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px; }
+
+.titulos {
+  font-size: 30px; }
+
+.subtitulos {
+  font-size: 25px; }
+
+.fixed {
+  display: none; }
+
+header {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  position: absolute;
+  position: fixed;
+  background-color: black;
+  display: flex;
+  align-items: baseline; }
+  header .navbar.bg-body-tertiary {
+    display: none; }
+    header .navbar.bg-body-tertiary .bg-body .navbar-toggler {
+      background-color: #179BD3 !important; }
+    header .navbar.bg-body-tertiary .bg-body .btn-close {
+      background-color: #179BD3 !important;
+      opacity: 100% !important; }
+    header .navbar.bg-body-tertiary .bg-body .offcanvas-header {
+      background-color: black !important; }
+    header .navbar.bg-body-tertiary .bg-body .offcanvas-body {
+      background-color: black !important; }
+    header .navbar.bg-body-tertiary .bg-body .nav-item a {
+      text-decoration: none;
+      color: #179BD3 !important; }
+  header .menu {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: baseline;
+    margin-inline-end: auto;
+    justify-content: flex-end;
+    margin: 5px; }
+    header .menu ul li {
+      display: inline-block;
+      margin: 5px; }
+    header .menu a {
+      text-decoration: none;
+      color: #179BD3;
+      display: flex;
+      align-items: baseline; }
+      header .menu a:hover {
+        color: white;
+        background-color: blue; }
+  header nav button {
+    font-size: 15px;
+    margin: 5px; }
+
+main {
+  margin-right: 40px;
+  margin-left: 40px; }
+  main .hero img {
+    margin-top: 120px;
+    width: 100%; }
+  main #nosotros h2 {
+    font-size: 30px; }
+  main #nosotros p {
+    font-size: 20px; }
+  main #nosotros ul {
+    display: inline-block;
+    justify-content: center; }
+    main #nosotros ul img {
+      width: 500px;
+      border-radius: 10%; }
+  main .atributos div {
+    display: inline-block;
+    justify-content: space-evenly;
+    justify-items: center; }
+    main .atributos div img {
+      width: 80px;
+      height: 80px;
+      justify-self: center; }
+    main .atributos div p {
+      font-size: 16px; }
+  main .proceso ul {
+    display: flex;
+    justify-content: center; }
+    main .proceso ul img {
+      border-radius: 10%; }
+
+main .contenido h2 {
+  font-size: 45px;
+  position: relative;
+  top: 40px; }
+  main .contenido h2 .bienvenida {
+    display: inline-block;
+    justify-content: space-evenly;
+    justify-items: center; }
+    main .contenido h2 .bienvenida p {
+      font-size: 20px; }
+
+main .contenido .promo {
+  height: 450px; }
+
+main .contenido .productos {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly; }
+  main .contenido .productos div {
+    width: 350px;
+    display: inline-block;
+    text-align: center;
+    justify-content: flex center; }
+    main .contenido .productos div h3 {
+      size: 30;
+      display: flex; }
+    main .contenido .productos div img {
+      width: 300px;
+      height: 300px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      border-radius: 10%; }
+    main .contenido .productos div a {
+      padding: 10px;
+      margin-bottom: 30px;
+      margin-top: 30px; }
+
+footer {
+  background-color: black;
+  height: 85px; }
+  footer ul {
+    margin-bottom: 0%;
+    padding: 0%;
+    display: flex;
+    justify-content: center; }
+    footer ul a img {
+      width: 50px;
+      height: 50px;
+      margin-top: 15px; }
+    footer ul .logog {
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      margin-top: 22px;
+      margin-left: 7px; }

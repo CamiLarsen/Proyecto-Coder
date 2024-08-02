@@ -1,0 +1,110 @@
+ // INDEX
+main {
+    margin-right: 40px;
+    margin-left: 40px;
+    .hero {
+        img {
+            margin-top: 120px;
+            width: 100%;
+        }
+    }
+    #nosotros {
+        h2 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 20px;
+        }
+        ul {
+            display: inline-block;
+            justify-content: center;
+            img {
+                width: 500px;
+                border-radius: 10%;
+            }
+        }
+    }
+    .atributos {
+        div {
+            display: inline-block;
+            justify-content: space-evenly;
+            justify-items: center;
+            img {
+                width: 80px;
+                height: 80px;
+                justify-self: center;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+    .proceso {
+        ul {
+            display: flex;
+            justify-content: center;
+            img {
+                border-radius: 10%;
+            }
+        }
+    }
+}
+
+ // PRODUCTOS Y SERVICIOS
+main .contenido {
+    h2 {
+        font-size: 45px;
+        position: relative;
+        top: 40px;
+        .bienvenida {
+            display: inline-block;
+            justify-content: space-evenly;
+            justify-items: center;
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+    .promo {
+        height: 450px;
+    }
+    .productos {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        div {
+            width: 350px;
+            display: inline-block;
+            text-align: center;
+            justify-content: flex center;
+            h3 {
+                size: 30;
+                display: flex;
+            }
+            img {
+                width: 300px;
+                height: 300px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                border-radius: 10%;
+            }
+            a {
+                padding: 10px;
+                margin-bottom: 30px;
+                margin-top: 30px
+            }
+        }
+    }
+}
+
+
+
+
+
+
+ // ZONAS DE REPARTO
+
+
+
+
+ //CONTACTO 

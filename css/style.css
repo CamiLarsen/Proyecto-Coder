@@ -1,13 +1,18 @@
-/**-----RESET-lo que aplico aca se aplicará a todas las etiquetas HTML-----*/ 
-*{
+
+/**-----RESET-------lo que aplico aca se aplicará a todas las etiquetas HTML-----*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/**-----RESET-------lo que aplico aca se aplicará a todas las etiquetas HTML-----*/
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 /**------ INDEX-------/
-/**-----HEADRER-----*/
-header { 
+/**-----HEADER-----*/
+header {
     width: 100%;
     height: 120px;
     padding: 10px;
@@ -20,12 +25,12 @@ header {
 }
 
 
-header nav ul li{
+header nav ul li {
     display: inline-block;
     margin: 5px;
 }
 
-header nav ul li a{
+header nav ul li a {
     text-decoration: none;
     color: #179BD3;
 }
@@ -34,8 +39,27 @@ header nav ul li a{
     display: none;
 }
 
-.menu{
-    position: relative; 
+.navbar-toggler {
+    background-color: #179BD3 !important;
+}
+div .offcanvas-body {
+    background-color: black !important;
+}
+.offcanvas-header {
+    background-color: black !important;
+}
+.btn-close {
+    background-color: #179BD3 !important;
+    opacity: 100% !important;
+}
+.nav-item a {
+    text-decoration: none;
+    color: #179BD3 !important;
+}
+
+
+.menu {
+    position: relative;
     display: flex;
     width: 100%;
     height: 50px;
@@ -52,50 +76,21 @@ header nav ul li a{
 
 nav button {
     font-size: 15px;
-    margin:5px;
+    margin: 5px;
 }
 
+
+
+
+/**-----MAIN-----*/
 main {
     margin-right: 40px;
     margin-left: 40px;
 }
 
-.imghero { 
-margin-top: 120px;
+.imghero {
+    margin-top: 120px;
 }
-
-.navbar.bg-body-tertiary {
-    background-color: black !important; 
-}
-
-.navbar-toggler {
-    background-color: #179BD3 !important;
-
-}
-
-div .offcanvas-body {
-    background-color: black !important;
-}
-
-
-.offcanvas-header {
-    background-color: black !important;
-}
-
-.btn-close {
-    background-color:#179BD3 !important;
-    opacity: 100% !important;
-}
-
-.nav-item a {
-    text-decoration: none;
-    color: #179BD3 !important;
-}
-
-
-/**-----MAIN-----*/
-
-/**-----INDEX-----*/
 
 .fixed {
     display: none;
@@ -150,16 +145,15 @@ div .offcanvas-body {
 /**-----PRODUCTOS Y SERV-----*/
 
 .bienvenida {
-    width: 100%;
-    height: 100px; 
-    margin-bottom: 400px;
-    display: flex;
-    justify-content: center;
+    display: inline-block;
+    justify-content: space-evenly;
+    justify-items: center;
 }
 
 .bienvenida h2 {
     font-size: 45px;
-    position: relative; top: 40px;
+    position: relative;
+    top: 40px;
 }
 
 .bienvenida p {
@@ -194,9 +188,10 @@ div .offcanvas-body {
 }
 
 .productos h2 {
-    size:30;
+    size: 30;
     display: flex;
 }
+
 .productos a {
     padding: 10px;
     margin-bottom: 30px;
@@ -206,7 +201,8 @@ div .offcanvas-body {
 .frio-calor h2 {
     padding: 20px;
 }
-.frio-calor img { 
+
+.frio-calor img {
     width: 299px;
     height: 450px;
     border-radius: 10%;
@@ -230,7 +226,8 @@ div .offcanvas-body {
 .texto a {
     height: 40px;
 }
-.envios { 
+
+.envios {
     margin-top: 50px;
 }
 
@@ -255,7 +252,7 @@ div .text-bg-dark {
     justify-content: center;
 }
 
-.formulario div { 
+.formulario div {
     margin-bottom: 10px;
     margin-top: 10px;
     margin-left: 10px;
@@ -267,10 +264,11 @@ div input {
     width: 730px;
 }
 
-.formulario h2{
+.formulario h2 {
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
+
 .formulario h3 {
     display: flex;
     justify-content: center;
@@ -293,7 +291,7 @@ div input {
     height: 40px;
 }
 
-.mensajeform input{
+.mensajeform input {
     height: 100px;
 }
 
@@ -309,7 +307,7 @@ div input {
     justify-content: flex center;
 }
 
-.reparto h2 { 
+.reparto h2 {
     margin-bottom: 10px;
     margin-top: 10px;
     display: flex;
@@ -358,7 +356,7 @@ div input {
 }
 
 .subtitulos {
-    font-size:25px
+    font-size: 25px
 }
 
 p {
@@ -366,17 +364,13 @@ p {
 }
 
 /**------FOOTER-----*/
-footer{
+footer {
     background-color: black;
     height: 85px;
 }
 
-footer h2 {
-    color: #179BD3;
-    display: flex;
-    justify-content: center;
-}
-footer img{
+
+footer img {
     width: 50px;
     height: 50px;
     margin-top: 15px;
@@ -405,7 +399,7 @@ header nav ul li a:hover {
     background-color: blue;
 }
 
-.boton:hover { 
+.boton:hover {
     background-color: #b1e8ff;
 }
 
@@ -419,13 +413,13 @@ header nav ul li a:hover {
 
 
 /**------GRID-----*/
-.bienvenida{
+.bienvenida {
     display: grid;
-    grid-template-rows:450px;
+    grid-template-rows: 450px;
     grid-template-columns: 49% 50%;
     column-gap: 10px;
     grid-template-areas:
-    "img info";
+        "img info";
 }
 
 .promo {
@@ -444,10 +438,10 @@ header nav ul li a:hover {
 
 .fc-info {
     display: grid;
-    grid-template-rows:450px;
+    grid-template-rows: 450px;
     grid-template-columns: 300px 533px;
     grid-template-areas:
-    "img1 texto"
+        "img1 texto"
 }
 
 .img1 {
@@ -468,8 +462,8 @@ header nav ul li a:hover {
     display: grid;
     grid-template-columns: 33.3% 33.3% 33.3%;
     grid-template-rows: auto;
-    grid-area: 
-    "A1 A2 A3";
+    grid-area:
+        "A1 A2 A3";
 }
 
 .A1 {
@@ -479,7 +473,7 @@ header nav ul li a:hover {
 
 .A2 {
     display: flex;
-    justify-self:center ;
+    justify-self: center;
 }
 
 .A3 {
@@ -494,20 +488,19 @@ header nav ul li a:hover {
 @media screen and (max-width: 1016px) {
     .abrir-menu {
         display: block;
-    } 
+    }
 
     .menu {
-        display:none;
+        display: none;
     }
 }
 
 /**------boton flotante wpp-----*/
-@media screen and (max-width: 1016px){
-    .fixed img{
+@media screen and (max-width: 1016px) {
+    .fixed img {
         display: block;
         width: 45px;
     }
-
     .fixed {
         display: block;
         position: fixed;
@@ -516,9 +509,10 @@ header nav ul li a:hover {
     }
 }
 
-@media screen and (max-width: 1016px){
+@media screen and (max-width: 1016px) {
     .navbar.bg-body-tertiary {
         display: block;
+        background-color: black !important;
     }
 }
 
@@ -533,7 +527,7 @@ header nav ul li a:hover {
     .titulos {
         font-size: 20px;
     }
-    .subtitulos{
+    .subtitulos {
         font-size: 16px;
     }
     h3 {
@@ -545,21 +539,20 @@ header nav ul li a:hover {
     .frio-calor div ul p {
         margin-bottom: 16px;
     }
-    .frio-calor img { 
+    .frio-calor img {
         width: 250px;
         height: 350px;
         border-radius: 10%;
     }
-
 }
 
 @media screen and (max-width:1000px) {
     .fc-info {
         display: grid;
         grid-template-columns: 300px 366px;
-        grid-template-rows:350px;
+        grid-template-rows: 350px;
         grid-template-areas:
-        "img1 texto"
+            "img1 texto"
     }
     .img1 {
         grid-area: img1;
@@ -568,16 +561,16 @@ header nav ul li a:hover {
         grid-area: texto;
         align-self: center;
     }
-    
+
 }
 
 @media screen and (max-width:1000px) {
     .fc-info {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows:350px;
+        grid-template-rows: 350px;
         grid-template-areas:
-        "img1" 
+        "img1"
         "texto"
     }
     .img1 {
@@ -587,10 +580,10 @@ header nav ul li a:hover {
         grid-area: texto;
         align-self: center;
     }
-    
+
 }
 
-@media screen and (max-width:350px ){
+@media screen and (max-width:350px) {
     .subtitulos {
         font-size: 16px;
     }
@@ -600,7 +593,7 @@ header nav ul li a:hover {
 }
 
 /**------formulario-----*/
-@media screen and (max-width: 350px) { 
+@media screen and (max-width: 350px) {
     div input {
         display: block;
         width: 200px;
@@ -608,7 +601,7 @@ header nav ul li a:hover {
 }
 
 
-@media screen and (max-width:780px){
+@media screen and (max-width:780px) {
     .atributos div {
         display: flex;
         flex-direction: column;
@@ -631,31 +624,25 @@ header nav ul li a:hover {
     .productos img {
         justify-self: center;
     }
-
     .productos h3 {
         font-size: 16px;
         justify-self: center;
     }
-
     .productos div ul a {
         justify-self: center;
     }
-
     .frio-calor {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-
     .frio-calor img {
-    justify-self: center;
+        justify-self: center;
     }
 }
 
 
-
-
-@media screen and (max-width:350px){
+@media screen and (max-width:350px) {
     .atributos div {
         display: flex;
         flex-direction: column;
@@ -677,11 +664,18 @@ header nav ul li a:hover {
         margin-bottom: 25px;
         border-radius: 10%;
     }
-    footer{
+    .reparto img {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        display: inline-block;
+        justify-content: center;
+    }
+    footer {
         background-color: black;
         height: 85px;
     }
-    footer img{
+    footer img {
         width: 25px;
         height: 25px;
         margin-top: 5px;
