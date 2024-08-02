@@ -95,16 +95,115 @@ main .contenido {
             }
         }
     }
+    .frio-calor {
+        h2 {
+            padding: 20px;   
+        }
+        .fc-info {
+            img {
+                width: 299px;
+                height: 450px;
+                border-radius: 10%;
+            }
+            .texto {    
+                    display: inline-block;
+                    vertical-align: top;
+                    p {
+                        margin-bottom: 20px;
+                    }
+                    a {
+                        height: 40px;  
+                        padding: 10px;
+                        margin-bottom: 10px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    .envios {
+        margin-top: 50px;
+        .text-bg-dark {
+            color: black !important;
+            font-weight: bold !important;
+            background-color: white !important;
+            }
+            .boton-zonas {
+                display: flex;
+                justify-content: center;
+                a {
+                    height: 40px;
+                }
+            }
+        }
 }
 
-
-
-
-
-
  // ZONAS DE REPARTO
-
-
-
+main {
+    .reparto {
+        ul {
+            display: flex;
+            justify-content: center;
+            h3 {
+                margin-bottom: 10px;
+                margin-top: 10px;
+                margin-left: 20px;
+                display: flex;
+                justify-content: center;
+                img {
+                    border-radius: 10%;
+                    width: 500px;
+                    height: 500px;
+                    margin: 20px;
+                    display: inline-block;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+} 
 
  //CONTACTO 
+
+main {
+    .container2 {
+        display: flex;
+        justify-content: center;
+        .formulario {
+            h3 {
+                display: flex;
+                justify-content: center;
+            }
+            div {
+                margin-bottom: 10px;
+                margin-top: 10px;
+                margin-left: 10px;
+                input {
+                    display: block;
+                    justify-content: center;
+                    width: 730px;
+                }
+                .mensajeform {
+                    display: block;
+                    justify-content: center;
+                    input {
+                        height: 100px;
+                    }
+                }
+                a {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    justify-content: center;
+                    .iconoW {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+                p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+            }
+        }
+    }
+}

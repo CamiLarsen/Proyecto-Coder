@@ -264,10 +264,6 @@ div input {
     width: 730px;
 }
 
-.formulario h2 {
-    display: flex;
-    justify-content: center;
-}
 
 .formulario h3 {
     display: flex;
@@ -307,12 +303,6 @@ div input {
     justify-content: flex center;
 }
 
-.reparto h2 {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-}
 
 .reparto div h3 {
     margin-bottom: 10px;

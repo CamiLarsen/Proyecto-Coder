@@ -140,6 +140,85 @@ main .contenido .productos {
       margin-bottom: 30px;
       margin-top: 30px; }
 
+main .contenido .frio-calor h2 {
+  padding: 20px; }
+
+main .contenido .frio-calor .fc-info img {
+  width: 299px;
+  height: 450px;
+  border-radius: 10%; }
+
+main .contenido .frio-calor .fc-info .texto {
+  display: inline-block;
+  vertical-align: top; }
+  main .contenido .frio-calor .fc-info .texto p {
+    margin-bottom: 20px; }
+  main .contenido .frio-calor .fc-info .texto a {
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px; }
+
+main .contenido .envios {
+  margin-top: 50px; }
+  main .contenido .envios .text-bg-dark {
+    color: black !important;
+    font-weight: bold !important;
+    background-color: white !important; }
+  main .contenido .envios .boton-zonas {
+    display: flex;
+    justify-content: center; }
+    main .contenido .envios .boton-zonas a {
+      height: 40px; }
+
+main .reparto ul {
+  display: flex;
+  justify-content: center; }
+  main .reparto ul h3 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center; }
+    main .reparto ul h3 img {
+      border-radius: 10%;
+      width: 500px;
+      height: 500px;
+      margin: 20px;
+      display: inline-block;
+      justify-content: center; }
+
+main .container2 {
+  display: flex;
+  justify-content: center; }
+  main .container2 .formulario h3 {
+    display: flex;
+    justify-content: center; }
+  main .container2 .formulario div {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px; }
+    main .container2 .formulario div input {
+      display: block;
+      justify-content: center;
+      width: 730px; }
+    main .container2 .formulario div .mensajeform {
+      display: block;
+      justify-content: center; }
+      main .container2 .formulario div .mensajeform input {
+        height: 100px; }
+    main .container2 .formulario div a {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      justify-content: center; }
+      main .container2 .formulario div a .iconoW {
+        width: 40px;
+        height: 40px; }
+    main .container2 .formulario div p {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
 footer {
   background-color: black;
   height: 85px; }
