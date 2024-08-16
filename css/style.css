@@ -480,18 +480,18 @@ header nav ul li a:hover {
         display: block;
     }
 
-    .menu {
+    nav .menu {
         display: none;
     }
 }
 
 /**------boton flotante wpp-----*/
 @media screen and (max-width: 1016px) {
-    .fixed img {
+    main div .fixed img {
         display: block;
         width: 45px;
     }
-    .fixed {
+    main div .fixed {
         display: block;
         position: fixed;
         bottom: 110px;
@@ -551,7 +551,6 @@ header nav ul li a:hover {
         grid-area: texto;
         align-self: center;
     }
-
 }
 
 @media screen and (max-width:1000px) {

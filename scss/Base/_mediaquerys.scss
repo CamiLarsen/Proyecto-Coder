@@ -1,0 +1,198 @@
+@media screen and (max-width: 1016px) {
+    main div .fixed img {
+        display: block;
+        width: 45px;
+    }
+    main div .fixed {
+        display: block;
+        position: fixed;
+        bottom: 110px;
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 1016px) {
+    header nav .navbar.bg-body-tertiary {
+        display: block;
+        background-color: black !important;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .titulos {
+        font-size: 20px;
+    }
+    .subtitulos {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 16px;
+    }
+    main div .productos img {
+        width: 200px;
+        height: 200px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        border-radius: 10%;
+    }
+    main .frio-calor {
+        img {
+            width: 250px;
+            height: 350px;
+            border-radius: 10%;
+            div ul p {
+                margin-bottom: 16px;
+            }
+            div .fc-info {
+                display: grid;
+                grid-template-columns: 300px 366px;
+                grid-template-rows: 350px;
+                grid-template-areas:
+                    "img1 texto"
+            }
+            .img1 {
+                grid-area: img1;
+            }
+            .texto {
+                grid-area: texto;
+                align-self: center;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:900px) {
+    .fc-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 350px;
+        grid-template-areas:
+            "img1"
+            "texto"
+    }
+
+    .img1 {
+        grid-area: img1;
+    }
+
+    .texto {
+        grid-area: texto;
+        align-self: center;
+    }
+
+}
+
+
+@media screen and (max-width:350px) {
+    .subtitulos {
+        font-size: 16px;
+    }
+
+    .titulos {
+        font-size: 20px;
+    }
+}
+
+/**------formulario-----*/
+@media screen and (max-width:780px) {
+    main .atributos div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    main .productos {
+        display: flex;
+        flex-direction: column;
+        div {
+            width: 350px;
+        }
+        h3 {
+            font-size: 16px;
+            justify-self: center;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            border-radius: 10%;
+            justify-self: center;
+        }
+        ul a {
+            justify-self: center;
+        }
+    }
+        .frio-calor {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            div img {
+                justify-self: center;
+            }
+        }
+}
+
+
+    @media screen and (max-width: 350px) {
+        div input {
+            display: block;
+            width: 200px;
+        }
+    }
+
+
+    @media screen and (max-width:350px) {
+        main .atributos div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        main .productos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            div {
+                width: 350px;
+                display: flex;
+                flex-direction: column;
+            }
+            img {
+                width: 200px;
+                height: 200px;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                border-radius: 10%;
+            }
+        }
+
+        main .reparto ul img {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            display: inline-block;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: black;
+            height: 85px;
+            ul img {
+                width: 25px;
+                height: 25px;
+                margin-top: 5px;
+                .logog {
+                width: 20px;
+                height: 20px;
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+                margin-left: 3.5px;
+                }
+            }
+        }
+}

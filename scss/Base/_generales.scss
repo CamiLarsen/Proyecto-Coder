@@ -17,7 +17,10 @@
     padding: 10px;
     margin: 10px;
     border-radius: 15px;
-}
+    &:hover {
+        background-color: #b1e8ff;
+        }
+    }
 
 .titulos {
     font-size: 30px;
