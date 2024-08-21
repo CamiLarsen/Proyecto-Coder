@@ -1,15 +1,16 @@
 @media screen and (max-width: 1016px) {
     main div .fixed img {
-        display: block;
+        display: block; 
         width: 45px;
     }
     main div .fixed {
         display: block;
         position: fixed;
         bottom: 110px;
-        right: 50px;
+        right: 50px; 
     }
-}
+} 
+
 
 @media screen and (max-width: 1016px) {
     header nav .navbar.bg-body-tertiary {
@@ -87,6 +88,17 @@
 
 }
 
+@media screen and (max-width:900px) {
+    main .bienvenida {
+        div img {
+            width: 250px
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+
+}
 
 @media screen and (max-width:350px) {
     .subtitulos {
@@ -99,7 +111,7 @@
 }
 
 /**------formulario-----*/
-@media screen and (max-width:780px) {
+@media screen and (max-width:998px) {
     main .atributos div {
         display: flex;
         flex-direction: column;
@@ -127,7 +139,7 @@
             justify-self: center;
         }
     }
-        .frio-calor {
+    main .frio-calor {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -135,6 +147,21 @@
                 justify-self: center;
             }
         }
+}
+
+
+@media screen and (max-width: 800px) {
+    div input {
+        display: block;
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    div input {
+        display: block;
+        width: 350px;
+    }
 }
 
 

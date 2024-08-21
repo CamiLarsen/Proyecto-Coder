@@ -33,11 +33,12 @@ main {
                 width: 80px;
                 height: 80px;
                 justify-self: center;
+                justify-content: space-evenly;
+                justify-items: center;
             }
             p {
                 font-size: 16px;
             }
-        }
     }
     .proceso {
         ul {
@@ -204,6 +205,61 @@ main {
                 align-items: center;
                 }
             }
+        }
+    }
+}
+
+
+
+/**------GRID-----*/
+main .atributos {
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto;
+    grid-area:
+        "A1 A2 A3";
+}
+
+
+main .bienvenida {
+    display: grid;
+    grid-template-rows: 450px;
+    grid-template-columns: 49% 50%;
+    column-gap: 10px;
+    grid-template-areas:
+        "img info";
+        .promo {
+        grid-area: img;
+        display: flex;
+        justify-self: center;
+        .p-tex {
+        grid-area: info;
+        align-self: center;
+        display: flex;
+        justify-self: start;
+        }
+    }
+}
+
+
+main div .fc-info {
+    display: grid;
+    grid-template-rows: 450px;
+    grid-template-columns: 300px 533px;
+    grid-template-areas:
+        "img1 texto";
+        .img1 {
+        grid-area: img1;
+        }
+        .texto {
+            grid-area: texto;
+            align-self: center;
+        }
+}
+
+main .formulario {
+        div .inputype {
+        grid-area: formulario;
         }
     }
 }
