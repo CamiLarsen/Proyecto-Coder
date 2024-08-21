@@ -34,8 +34,7 @@ header {
   position: fixed;
   background-color: black;
   display: flex;
-  align-items: baseline;
-  z-index: 1; }
+  align-items: baseline; }
   header .navbar.bg-body-tertiary {
     display: none; }
     header .navbar.bg-body-tertiary .bg-body .navbar-toggler {
@@ -80,177 +79,188 @@ nav button {
 
 main {
   margin-right: 40px;
-  margin-left: 40px;
-  /**------GRID-----*/ }
+  margin-left: 40px; }
   main .hero img {
     margin-top: 120px;
     width: 100%; }
-  main #nosotros h2 {
+  main .container #nosotros h2 {
     font-size: 30px; }
-  main #nosotros p {
+  main .container #nosotros p {
     font-size: 20px; }
-  main #nosotros ul {
+  main .container #nosotros ul {
     display: inline-block;
     justify-content: center; }
-    main #nosotros ul img {
+    main .container #nosotros ul img {
       width: 500px;
       border-radius: 10%; }
-  main .atributos div {
+  main .container .atributos div {
+    display: inline-block;
+    justify-content: space-evenly;
+    margin-left: auto; }
+    main .container .atributos div img {
+      width: 80px;
+      height: 80px;
+      align-items: center; }
+    main .container .atributos div p {
+      font-size: 16px; }
+  main .container .proceso h2 {
+    margin-top: 20px; }
+  main .container .proceso ul img {
+    display: flex;
+    justify-content: center; }
+
+main .contenido h2 {
+  font-size: 45px;
+  position: relative;
+  top: 40px; }
+  main .contenido h2 .bienvenida {
     display: inline-block;
     justify-content: space-evenly;
     justify-items: center; }
-    main .atributos div img {
-      width: 80px;
-      height: 80px;
-      justify-self: center;
-      justify-content: space-evenly;
-      justify-items: center; }
-    main .atributos div p {
-      font-size: 16px; }
-  main .atributos .proceso ul {
-    display: flex;
-    justify-content: center; }
-    main .atributos .proceso ul img {
-      border-radius: 10%; }
-  main main .contenido h2 {
-    font-size: 45px;
-    position: relative;
-    top: 40px; }
-    main main .contenido h2 .bienvenida {
-      display: inline-block;
-      justify-content: space-evenly;
-      justify-items: center; }
-      main main .contenido h2 .bienvenida p {
-        font-size: 20px; }
-  main main .contenido .promo {
-    height: 450px; }
-  main main .contenido .productos {
-    display: flex;
-    justify-content: center;
-    justify-content: space-evenly; }
-    main main .contenido .productos div {
-      width: 350px;
-      display: inline-block;
-      text-align: center;
-      justify-content: flex center; }
-      main main .contenido .productos div h3 {
-        size: 30;
-        display: flex; }
-      main main .contenido .productos div img {
-        width: 300px;
-        height: 300px;
-        margin-top: 25px;
-        margin-bottom: 25px;
-        border-radius: 10%; }
-      main main .contenido .productos div a {
-        padding: 10px;
-        margin-bottom: 30px;
-        margin-top: 30px; }
-  main main .contenido .frio-calor h2 {
-    padding: 20px; }
-  main main .contenido .frio-calor .fc-info img {
-    width: 299px;
-    height: 450px;
-    border-radius: 10%; }
-  main main .contenido .frio-calor .fc-info .texto {
+    main .contenido h2 .bienvenida p {
+      font-size: 20px; }
+
+main .contenido .promo {
+  height: 450px; }
+
+main .contenido .productos {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly; }
+  main .contenido .productos div {
+    width: 350px;
     display: inline-block;
-    vertical-align: top; }
-    main main .contenido .frio-calor .fc-info .texto p {
-      margin-bottom: 20px; }
-    main main .contenido .frio-calor .fc-info .texto a {
-      height: 40px;
+    text-align: center;
+    justify-content: flex center; }
+    main .contenido .productos div h3 {
+      size: 30;
+      display: flex; }
+    main .contenido .productos div img {
+      width: 300px;
+      height: 300px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      border-radius: 10%; }
+    main .contenido .productos div a {
       padding: 10px;
-      margin-bottom: 10px;
-      margin-top: 10px; }
-  main main .contenido .envios {
-    margin-top: 50px; }
-    main main .contenido .envios .text-bg-dark {
-      color: black !important;
-      font-weight: bold !important;
-      background-color: white !important; }
-    main main .contenido .envios .boton-zonas {
-      display: flex;
+      margin-bottom: 30px;
+      margin-top: 30px; }
+
+main .contenido .frio-calor h2 {
+  padding: 20px; }
+
+main .contenido .frio-calor .fc-info img {
+  width: 299px;
+  height: 450px;
+  border-radius: 10%; }
+
+main .contenido .frio-calor .fc-info .texto {
+  display: inline-block;
+  vertical-align: top; }
+  main .contenido .frio-calor .fc-info .texto p {
+    margin-bottom: 20px; }
+  main .contenido .frio-calor .fc-info .texto a {
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px; }
+
+main .contenido .envios {
+  margin-top: 50px; }
+  main .contenido .envios .text-bg-dark {
+    color: black !important;
+    font-weight: bold !important;
+    background-color: white !important; }
+  main .contenido .envios .boton-zonas {
+    display: flex;
+    justify-content: center; }
+    main .contenido .envios .boton-zonas a {
+      height: 40px; }
+
+main .reparto ul {
+  display: flex;
+  justify-content: center; }
+  main .reparto ul h3 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center; }
+    main .reparto ul h3 img {
+      border-radius: 10%;
+      width: 500px;
+      height: 500px;
+      margin: 20px;
+      display: inline-block;
       justify-content: center; }
-      main main .contenido .envios .boton-zonas a {
+
+main .container2 {
+  display: flex;
+  justify-content: center; }
+  main .container2 .formulario h3 {
+    display: flex;
+    justify-content: center; }
+  main .container2 .formulario div {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px; }
+    main .container2 .formulario div input {
+      display: block;
+      justify-content: center;
+      width: 730px; }
+    main .container2 .formulario div .mensajeform {
+      display: block;
+      justify-content: center; }
+      main .container2 .formulario div .mensajeform input {
+        height: 100px; }
+    main .container2 .formulario div a {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      justify-content: center; }
+      main .container2 .formulario div a .iconoW {
+        width: 40px;
         height: 40px; }
-  main main .reparto ul {
+    main .container2 .formulario div p {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+
+/**------GRID-----*/
+main .atributos {
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: auto;
+  grid-area: "A1 A2 A3"; }
+
+main .bienvenida {
+  display: grid;
+  grid-template-rows: 450px;
+  grid-template-columns: 49% 50%;
+  column-gap: 10px;
+  grid-template-areas: "img info"; }
+  main .bienvenida .promo {
+    grid-area: img;
     display: flex;
-    justify-content: center; }
-    main main .reparto ul h3 {
-      margin-bottom: 10px;
-      margin-top: 10px;
-      margin-left: 20px;
+    justify-self: center; }
+    main .bienvenida .promo .p-tex {
+      grid-area: info;
+      align-self: center;
       display: flex;
-      justify-content: center; }
-      main main .reparto ul h3 img {
-        border-radius: 10%;
-        width: 500px;
-        height: 500px;
-        margin: 20px;
-        display: inline-block;
-        justify-content: center; }
-  main main .container2 {
-    display: flex;
-    justify-content: center; }
-    main main .container2 .formulario h3 {
-      display: flex;
-      justify-content: center; }
-    main main .container2 .formulario div {
-      margin-bottom: 10px;
-      margin-top: 10px;
-      margin-left: 10px; }
-      main main .container2 .formulario div input {
-        display: block;
-        justify-content: center;
-        width: 730px; }
-      main main .container2 .formulario div .mensajeform {
-        display: block;
-        justify-content: center; }
-        main main .container2 .formulario div .mensajeform input {
-          height: 100px; }
-      main main .container2 .formulario div a {
-        margin-top: 20px;
-        margin-bottom: 20px;
-        justify-content: center; }
-        main main .container2 .formulario div a .iconoW {
-          width: 40px;
-          height: 40px; }
-      main main .container2 .formulario div p {
-        display: flex;
-        justify-content: center;
-        align-items: center; }
-  main main .atributos {
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-rows: auto;
-    grid-area: "A1 A2 A3"; }
-  main main .bienvenida {
-    display: grid;
-    grid-template-rows: 450px;
-    grid-template-columns: 49% 50%;
-    column-gap: 10px;
-    grid-template-areas: "img info"; }
-    main main .bienvenida .promo {
-      grid-area: img;
-      display: flex;
-      justify-self: center; }
-      main main .bienvenida .promo .p-tex {
-        grid-area: info;
-        align-self: center;
-        display: flex;
-        justify-self: start; }
-  main main div .fc-info {
-    display: grid;
-    grid-template-rows: 450px;
-    grid-template-columns: 300px 533px;
-    grid-template-areas: "img1 texto"; }
-    main main div .fc-info .img1 {
-      grid-area: img1; }
-    main main div .fc-info .texto {
-      grid-area: texto;
-      align-self: center; }
-  main main .formulario div .inputype {
-    grid-area: formulario; }
+      justify-self: start; }
+
+main div .fc-info {
+  display: grid;
+  grid-template-rows: 450px;
+  grid-template-columns: 300px 533px;
+  grid-template-areas: "img1 texto"; }
+  main div .fc-info .img1 {
+    grid-area: img1; }
+  main div .fc-info .texto {
+    grid-area: texto;
+    align-self: center; }
+
+main .formulario div .inputype {
+  grid-area: formulario; }
 
 footer {
   background-color: black;
@@ -273,21 +283,21 @@ footer {
       margin-left: 7px; }
 
 @media screen and (max-width: 1016px) {
-  main div .fixed img {
-    display: block;
-    width: 45px; }
-  main div .fixed {
+  main .fixed {
     display: block;
     position: fixed;
     bottom: 110px;
-    right: 50px; } }
+    right: 50px; }
+    main .fixed img {
+      display: block;
+      width: 45px; } }
 
-@media screen and (max-width: 1016px) {
+@media screen and (max-width: 1016px) and (max-width: 1016px) {
   header nav .navbar.bg-body-tertiary {
     display: block;
     background-color: black !important; } }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1016px) and (max-width: 1000px) {
   .titulos {
     font-size: 20px; }
   .subtitulos {
@@ -319,7 +329,7 @@ footer {
       grid-area: texto;
       align-self: center; } }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1016px) and (max-width: 900px) {
   .fc-info {
     display: grid;
     grid-template-columns: 1fr;
@@ -331,20 +341,26 @@ footer {
     grid-area: texto;
     align-self: center; } }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1016px) and (max-width: 900px) {
   main .bienvenida div img {
     width: 250px; }
   main .bienvenida p {
     font-size: 15px; } }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 1016px) and (max-width: 464px) {
+  .reparto ul img {
+    width: 300px; } }
+
+@media screen and (max-width: 1016px) and (max-width: 350px) {
   .subtitulos {
     font-size: 16px; }
   .titulos {
     font-size: 20px; } }
 
-/**------formulario-----*/
-@media screen and (max-width: 998px) {
+@media screen and (max-width: 1016px) {
+  /**------formulario-----*/ }
+
+@media screen and (max-width: 1016px) and (max-width: 998px) {
   main .atributos div {
     display: flex;
     flex-direction: column;
@@ -373,22 +389,22 @@ footer {
     main .frio-calor div img {
       justify-self: center; } }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1016px) and (max-width: 800px) {
   div input {
     display: block;
     width: 650px; } }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1016px) and (max-width: 500px) {
   div input {
     display: block;
     width: 350px; } }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 1016px) and (max-width: 350px) {
   div input {
     display: block;
     width: 200px; } }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 1016px) and (max-width: 350px) {
   main .atributos div {
     display: flex;
     flex-direction: column; }

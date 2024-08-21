@@ -8,48 +8,50 @@ main {
             width: 100%;
         }
     }
-    #nosotros {
-        h2 {
-            font-size: 30px;
-        }
-        p {
-            font-size: 20px;
-        }
-        ul {
-            display: inline-block;
-            justify-content: center;
-            img {
-                width: 500px;
-                border-radius: 10%;
-            }
-        }
-    }
-    .atributos {
-        div {
-            display: inline-block;
-            justify-content: space-evenly;
-            justify-items: center;
-            img {
-                width: 80px;
-                height: 80px;
-                justify-self: center;
-                justify-content: space-evenly;
-                justify-items: center;
+    .container {
+        #nosotros {
+            h2 {
+                font-size: 30px;
             }
             p {
-                font-size: 16px;
+                font-size: 20px;
             }
-    }
-    .proceso {
-        ul {
-            display: flex;
-            justify-content: center;
-            img {
+            ul {
+                display: inline-block;
+                justify-content: center;
+                img {
+                width: 500px;
                 border-radius: 10%;
+                }
+            }
+        }
+        .atributos {
+            div {
+                display: inline-block;
+                justify-content: space-evenly;
+                margin-left: auto;
+                img {
+                width: 80px;
+                height: 80px;
+                align-items: center;
+                }
+                p {
+                font-size: 16px;
+                }
+            }
+        }
+        .proceso {
+            h2 {
+                margin-top:20px ;
+            }
+            ul img{
+                display: flex;
+                justify-content: center;
+                }
             }
         }
     }
-}
+
 
  // PRODUCTOS Y SERVICIOS
 main .contenido {
@@ -262,4 +264,3 @@ main .formulario {
         grid-area: formulario;
         }
     }
-}
