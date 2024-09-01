@@ -394,17 +394,29 @@ footer {
     display: block;
     width: 650px; } }
 
-@media screen and (max-width: 1016px) and (max-width: 500px) {
+@media screen and (max-width: 1016px) and (max-width: 700px) {
+  div img .promo {
+    height: 350px; } }
+
+@media screen and (max-width: 1016px) and (max-width: 600px) {
+  main .reparto ul img {
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    display: inline-block;
+    justify-content: center; } }
+
+@media screen and (max-width: 1016px) and (max-width: 600px) and (max-width: 500px) {
   div input {
     display: block;
     width: 350px; } }
 
-@media screen and (max-width: 1016px) and (max-width: 350px) {
+@media screen and (max-width: 1016px) and (max-width: 600px) and (max-width: 400px) {
   div input {
     display: block;
     width: 200px; } }
 
-@media screen and (max-width: 1016px) and (max-width: 350px) {
+@media screen and (max-width: 1016px) and (max-width: 600px) and (max-width: 350px) {
   main .atributos div {
     display: flex;
     flex-direction: column; }
